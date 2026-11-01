@@ -1,7 +1,7 @@
 
 # Installation Guide — Get Kiro Crew Running
 
-**Do this before the session starts.** Next: [Module 1 — Account & Token Management](Handson-1-Account-Token.md)
+**Do this before the session starts.** [All modules](README.md) · Next: [Module 1 — Account & Token Management](Handson-1-Account-Token.md)
 
 ---
 

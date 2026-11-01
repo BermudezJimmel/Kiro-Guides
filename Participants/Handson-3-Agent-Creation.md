@@ -27,6 +27,10 @@ Open **Customize → Mates** → **New mate**.
 | Toolbox | Start narrow. Only what the job needs. |
 | Trigger words | Short phrases that uniquely call this agent, e.g. "triage this ticket" |
 
+✅ **You'll know it worked when:** your new mate's name appears in the left-hand list, and its own chat opens on its own, asking what you'd like it to do.
+
+🧭 **Don't see "New mate"?** Look for a **+** button near the top of the Mates list — same action, different spot depending on whether this is your first mate or not.
+
 **Example prompt to write its job description:**
 
 > "You triage incoming support tickets. Read the ticket, classify severity, and suggest an owner. Never close or reassign a ticket yourself — only recommend."
@@ -47,9 +51,15 @@ Ask it to do something outside its job on purpose:
 
 Watch for an approval prompt, or a refusal. **This is the moment that proves the boundary is real, not just a suggestion.**
 
+✅ **You'll see one of two things:** a card asking "Allow this?" with Approve/Deny buttons, or a plain written refusal. Both are a pass — either way, it didn't just do it silently.
+
+🧭 **It just did the task, no prompt at all?** Check Step 4 below — YOLO (auto-approve) may already be on from an earlier session.
+
 ## Step 4: See the master switch
 
 Open **Settings → Security → YOLO (auto-approve)**.
+
+✅ **What you're looking for:** a toggle switch next to "YOLO (auto-approve)." Grey/left = off (default, safer). Colored/right = on.
 
 By default, Crew asks before most actions — what you just saw in Step 3. Turning YOLO on lets it skip asking for a set amount of time. Leave it off while your team is still learning what to trust an agent with.
 

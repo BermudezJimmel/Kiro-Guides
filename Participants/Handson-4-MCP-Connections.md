@@ -21,6 +21,10 @@ Remember the answer — you'll compare it after Step 2.
 
 Open **Customize → Connections → MCP Servers → Add Server**. Pick one from the directory, or **Add Custom** for something internal to DBP.
 
+✅ **You'll know it worked when:** the new server appears in your MCP Servers list with a connected status next to it.
+
+🧭 **Nothing in the directory fits?** Use **Add Custom** — ask your trainer for the connection details ahead of time so you're not typing them live.
+
 ## Step 3: Ask the same question again
 
 > **Prompt:** "What tools and connections do you have access to now?"

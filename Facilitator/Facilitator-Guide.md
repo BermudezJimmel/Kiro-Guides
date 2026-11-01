@@ -27,6 +27,12 @@ Call back to this frame in all three modules: tokens = the hire's ID badge, agen
 | 0:10 – 0:45 | 35 min | Module 1 — Account & Token Management |
 | 0:45 – 1:25 | 40 min | Module 2 — Kiro Crew: How It Works + Live Demo |
 | 1:25 – 2:00 | 35 min | Module 3 — Agent Creation |
+| 2:00 – 2:15 | 15 min | Module 4 — Connect Your Own Tools (MCP) |
+| 2:15 – 2:30 | 15 min | Module 5 — Many Hands, One Ask (Subagents) |
+| 2:30 – 2:45 | 15 min | Module 6 — "Keep an Eye on This For Me" (Monitor/Babysit) |
+| 2:45 – 3:00 | 15 min | Module 7 — Apps: Features You Turn On |
+
+**Total: 3 hours.** Modules 4-7 were added after the client asked to see more of Kiro Crew's feature set — pick a real PR, a real second data source, and a real shipped-but-off app before the day, so each demo uses DBP's own context.
 
 Rule for the room: after minute ~20, nobody is just listening — everyone has the dashboard open and is doing something.
 

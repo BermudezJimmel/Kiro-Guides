@@ -1,7 +1,7 @@
 
 # Hands-On 3 — Agent Creation
 
-**Module 3 of 3** · [All modules](README.md) · Previous: [Module 2](Handson-2-How-It-Works.md)
+**Module 3 of 7** · [All modules](README.md) · Previous: [Module 2](Handson-2-How-It-Works.md) · Next: [Module 4 — Connect Your Own Tools](Handson-4-MCP-Connections.md)
 
 ---
 
@@ -75,4 +75,6 @@ By default, Crew asks before most actions — what you just saw in Step 3. Turni
 | Create a crew member | Customize → Mates → New Mate |
 | Control how much an agent can do without asking | Settings → Security → YOLO (auto-approve) |
 
-That's all 3 modules. ← [Back to all modules](README.md)
+Done with Module 3? → [Module 4 — Connect Your Own Tools](Handson-4-MCP-Connections.md)
+
+← [Back to all modules](README.md)

@@ -133,13 +133,17 @@
     <div class="accent-corner"></div>
     <div class="logo"><img src="sagesoft-logo.svg" alt="Sagesoft Solutions"></div>
     <h2>Today's Agenda</h2>
-    <p class="slide-sub">Explain, then do — hands-on right after each module</p>
-    <table class="agenda-table">
+    <p class="slide-sub">3 hours total — explain, then do, right after each module</p>
+    <table class="agenda-table" style="font-size:0.95rem;">
         <tr><th>Time</th><th>Module</th></tr>
         <tr><td>0:00 – 0:10</td><td>Welcome + open the Hands-On Guide (GitHub repo)</td></tr>
-        <tr><td>0:10 – 0:45</td><td>Module 1 — Account &amp; Token Management: explain, then do</td></tr>
-        <tr><td>0:45 – 1:25</td><td>Module 2 — How Kiro Crew Works: explain, live demo, then do</td></tr>
-        <tr><td>1:25 – 2:00</td><td>Module 3 — Agent Creation: explain, then do</td></tr>
+        <tr><td>0:10 – 0:45</td><td>Module 1 — Account &amp; Token Management</td></tr>
+        <tr><td>0:45 – 1:25</td><td>Module 2 — How Kiro Crew Works + live demo</td></tr>
+        <tr><td>1:25 – 2:00</td><td>Module 3 — Agent Creation</td></tr>
+        <tr><td>2:00 – 2:15</td><td>Module 4 — Connect Your Own Tools (MCP)</td></tr>
+        <tr><td>2:15 – 2:30</td><td>Module 5 — Many Hands, One Ask (Subagents)</td></tr>
+        <tr><td>2:30 – 2:45</td><td>Module 6 — "Keep an Eye on This For Me" (Monitor)</td></tr>
+        <tr><td>2:45 – 3:00</td><td>Module 7 — Apps: Features You Turn On</td></tr>
     </table>
     <div class="quote" style="font-size:1.05rem;">🛠 <strong>Hands-On Guide:</strong> start with <a href="https://github.com/BermudezJimmel/Kiro-Guides/blob/content/Participants/Handson-0-Installation.md" target="_blank">Installation</a> (do this before class), then <a href="https://github.com/BermudezJimmel/Kiro-Guides/blob/content/Participants/Handson-1-Account-Token.md" target="_blank">Module 1</a> — each page links to the next, like an AWS Immersion Day.</div>
 </div>
@@ -273,6 +277,66 @@
     <div class="quote" style="font-size:0.95rem;">🛠 Hands-On: <a href="https://github.com/BermudezJimmel/Kiro-Guides/blob/content/Participants/Handson-3-Agent-Creation.md" target="_blank">Module 3 guide</a>, Step 2 (delegation).</div>
 </div>
 
+<!-- SLIDE 8I: MODULE 4 - MCP CONNECTIONS -->
+<div class="slide">
+    <div class="accent-corner"></div>
+    <div class="logo"><img src="sagesoft-logo.svg" alt="Sagesoft Solutions"></div>
+    <h2>Module 4: Connect Your Own Tools</h2>
+    <p class="slide-sub">This is how "it doesn't know my AWS account" gets fixed</p>
+    <ul class="big-list">
+        <li><strong>MCP</strong> = the plug. Jira, AWS, GitHub, your own API — each connects through one</li>
+        <li>Customize → Connections → MCP Servers → <strong>Add Server</strong>, pick from the directory or add your own</li>
+        <li>Connect it once — every agent on this gateway can use it, no per-agent re-wiring</li>
+    </ul>
+    <div class="analogy"><strong>Analogy:</strong> like plugging in a new appliance. The outlet (Crew) doesn't change — what you plug in does.</div>
+    <div class="quote" style="font-size:0.95rem;">🛠 Hands-On: <a href="https://github.com/BermudezJimmel/Kiro-Guides/blob/content/Participants/Handson-4-MCP-Connections.md" target="_blank">Module 4 guide</a>.</div>
+</div>
+
+<!-- SLIDE 8J: MODULE 5 - SUBAGENTS -->
+<div class="slide">
+    <div class="accent-corner"></div>
+    <div class="logo"><img src="sagesoft-logo.svg" alt="Sagesoft Solutions"></div>
+    <h2>Module 5: Many Hands, One Ask</h2>
+    <p class="slide-sub">One request can run several agents at once, in the background</p>
+    <ul class="big-list">
+        <li>Ask for 2+ independent things at once — Crew can split them into subagents that run in parallel</li>
+        <li>Each one works on its own, then reports back with one combined answer</li>
+        <li>Good for research across sources, or checking many files at once</li>
+    </ul>
+    <div class="analogy"><strong>Analogy:</strong> like sending 3 interns to check 3 buildings at once, instead of walking to each one yourself.</div>
+    <div class="quote" style="font-size:0.95rem;">🛠 Hands-On: <a href="https://github.com/BermudezJimmel/Kiro-Guides/blob/content/Participants/Handson-5-Subagents.md" target="_blank">Module 5 guide</a>.</div>
+</div>
+
+<!-- SLIDE 8K: MODULE 6 - MONITOR / BABYSIT -->
+<div class="slide">
+    <div class="accent-corner"></div>
+    <div class="logo"><img src="sagesoft-logo.svg" alt="Sagesoft Solutions"></div>
+    <h2>Module 6: "Keep an Eye on This For Me"</h2>
+    <p class="slide-sub">Just ask — Crew watches in the background and tells you when it matters</p>
+    <ul class="big-list">
+        <li>Say "watch this PR and tell me when it's ready to merge" — it checks on its own schedule, not yours</li>
+        <li>It speaks up only when something changed — not on every single check</li>
+        <li>Works on pull requests, CI runs, tickets — anything that changes state over time</li>
+    </ul>
+    <div class="analogy"><strong>Analogy:</strong> like a pot of water on the stove. You don't stare at it — it tells you when it boils.</div>
+    <div class="quote" style="font-size:0.95rem;">🛠 Hands-On: <a href="https://github.com/BermudezJimmel/Kiro-Guides/blob/content/Participants/Handson-6-Monitor-Babysit.md" target="_blank">Module 6 guide</a>.</div>
+</div>
+
+<!-- SLIDE 8L: MODULE 7 - APPS -->
+<div class="slide">
+    <div class="accent-corner"></div>
+    <div class="logo"><img src="sagesoft-logo.svg" alt="Sagesoft Solutions"></div>
+    <h2>Module 7: Apps — Features You Turn On</h2>
+    <p class="slide-sub">Pre-built bundles of pages, agents and schedules — not something you build from scratch</p>
+    <ul class="big-list">
+        <li>Sidebar → Apps → <strong>Discover</strong>: browse what's available</li>
+        <li>Most ship already on your machine, off by default — <strong>Library</strong> → turn one on</li>
+        <li>An app can bring its own dashboard page, its own agent, and its own scheduled jobs, all at once</li>
+    </ul>
+    <div class="analogy"><strong>Analogy:</strong> like installing an app on your phone. The phone (Crew) doesn't change — what it can do does.</div>
+    <div class="quote" style="font-size:0.95rem;">🛠 Hands-On: <a href="https://github.com/BermudezJimmel/Kiro-Guides/blob/content/Participants/Handson-7-Apps.md" target="_blank">Module 7 guide</a>.</div>
+</div>
+
 <!-- SLIDE 8C: REAL USE CASES -->
 <div class="slide">
     <div class="accent-corner"></div>
@@ -347,7 +411,7 @@
     <p class="slide-sub">Same model, same rate — the difference is who's driving</p>
     <ul class="big-list">
         <li>The same prompt on the same model costs the same, whether it ran in IDE, CLI, or Crew</li>
-        <li>All three draw from ONE account — one credit pool, no separate "Crew tax"</li>
+        <li>All three draw from ONE account, one credit pool — Crew does not charge anything extra on top</li>
         <li>What changes the total is how many requests run — not which tool runs them</li>
         <li>Crew can run requests on its own (cron, heartbeat, subagents) while you're away, so its total CAN end up highest — because it does more, not because it costs more per request</li>
     </ul>

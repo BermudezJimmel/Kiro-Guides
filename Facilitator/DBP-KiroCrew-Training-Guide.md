@@ -45,6 +45,12 @@ Vague onboarding → vague results. The more specific the job description, the b
 | 0:10 – 0:45 | 35 min | Module 1: Account & Token Management |
 | 0:45 – 1:25 | 40 min | Module 2: Kiro Crew — How It Works + Live Demo |
 | 1:25 – 2:00 | 35 min | Module 3: Agent Creation |
+| 2:00 – 2:15 | 15 min | Module 4: Connect Your Own Tools (MCP) |
+| 2:15 – 2:30 | 15 min | Module 5: Many Hands, One Ask (Subagents) |
+| 2:30 – 2:45 | 15 min | Module 6: "Keep an Eye on This For Me" (Monitor/Babysit) |
+| 2:45 – 3:00 | 15 min | Module 7: Apps: Features You Turn On |
+
+**Total: 3 hours**, extended from 2 at the client's request to cover more of Kiro Crew's feature set.
 
 Rule for the room: after minute ~20, nobody just listens. Everyone has the Crew dashboard open and does something.
 

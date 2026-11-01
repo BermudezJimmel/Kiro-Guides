@@ -7,4 +7,6 @@ Open these in order. Each page ends with a link to the next one.
 3. [Module 2 — How Kiro Crew Works](Handson-2-How-It-Works.md)
 4. [Module 3 — Agent Creation](Handson-3-Agent-Creation.md)
 
-Nothing else in this folder. Follow along with the slide right after your trainer explains it.
+Also here: [Prompt Guide](Prompt-Guide.md) — ready-to-use prompts for each topic, copy and paste.
+
+Follow along with the slide right after your trainer explains it.

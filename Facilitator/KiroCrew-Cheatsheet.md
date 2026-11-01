@@ -1,7 +1,7 @@
 # Kiro Crew — Running It: Cheat Sheet
 
 **Source:** verified against the actual `kirocrew` CLI module spec in [kirodotdev/KiroCrew](https://github.com/kirodotdev/KiroCrew) (`docs/system-specs/modules/cli.md`, `install.md`, `README.md`, `taskrunner.md`, `security.md`, `computer-use.md`), not just blog posts.
-**Audience:** you, running/demoing Kiro Crew for the DBP training. Companion to `Facilitator-Guide.md` / `Participant-Guide.md` in this same folder.
+**Audience:** you, running/demoing Kiro Crew for the DBP training. Companion to `Facilitator-Guide.md` in this folder and the `Participants/` hands-on guides.
 
 ---
 

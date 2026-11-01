@@ -12,11 +12,11 @@ Each page follows along with the slide right after it's explained — open it wh
 
 - [DBP-KiroCrew-Presentation.html](DBP-KiroCrew-Presentation.html)
 
+Also in `Participants/`: [Prompt-Guide.md](Participants/Prompt-Guide.md) — copy-paste prompts for every topic.
+
 ## Trainer-only — [Facilitator folder](Facilitator/)
 
 - [Facilitator-Guide.md](Facilitator/Facilitator-Guide.md) — trainer's run-sheet
-- [Prompt-Guide.md](Facilitator/Prompt-Guide.md) — copy-paste prompts
 - [KiroCrew-Visual-Guide.md](Facilitator/KiroCrew-Visual-Guide.md) — diagrams
 - [KiroCrew-Cheatsheet.md](Facilitator/KiroCrew-Cheatsheet.md) — command reference
 - [DBP-KiroCrew-Training-Guide.md](Facilitator/DBP-KiroCrew-Training-Guide.md) — full comprehensive guide
-- [Participant-Guide.md](Facilitator/Participant-Guide.md) — all 3 modules in one file (offline backup of the Participants folder)

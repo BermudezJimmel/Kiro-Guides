@@ -66,4 +66,6 @@ Before you do [ACTION], tell me what you're about to change and wait for my conf
 
 ---
 
-*Pair this with `Facilitator-Guide.md` and `Participant-Guide.md` in this repo for the full training flow.*
+*Pair this with [the 3 hands-on modules](README.md) in this folder for the full training flow.*
+
+← [Back to all modules](README.md)

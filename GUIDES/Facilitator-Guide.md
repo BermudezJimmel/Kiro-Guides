@@ -2,7 +2,7 @@
 
 **Client:** DBP
 **Delivered by:** Sagesoft Solutions Inc.
-**Format:** 2 hours — 15-20 min discussion, remainder hands-on
+**Format:** ~3 hours (incl. breaks) — 15-20 min discussion, remainder hands-on
 **Audience:** Developers (20 participants)
 **Tool in focus:** Kiro Crew (dashboard + CLI). The deck now also compares it with Kiro IDE and CLI (platforms, specs, security, credits — slides right after Agent Creation).
 **Companion files:** `Participants/` folder (Installation + Module 1-3, hand to the room), `KiroCrew-Cheatsheet.md` (your command reference), `KiroCrew-Visual-Guide.md` (diagrams to project), `DBP-KiroCrew-Presentation.html` (slide deck for the discussion segment)
@@ -19,7 +19,7 @@ Call back to this frame in all three modules: tokens = the hire's ID badge, agen
 
 ---
 
-## Session Flow (120 min)
+## Session Flow (~180 min)
 
 | Time | Duration | Segment |
 |---|---|---|
@@ -111,7 +111,7 @@ This is the core of the session. Protect this time block if anything runs long e
 | Job description / toolbox / boundaries | Map directly to: prompt, `tools`, permission rules |
 | Trigger words | What tells the conductor to route a message to this member — pick non-overlapping phrases |
 | The approval moment (Step 3 in the workbook) | **The must-not-skip moment.** Ask the agent to do something outside its job, watch it ask for approval or refuse. This is what makes "boundaries, not suggestions" land. Budget time for it even if you have to cut something else |
-| Agent Autonomy (Supervised vs. Autopilot) | The master on/off switch for approval prompts — Supervised is the safer default for a team still learning what to trust |
+| Approval mode (Supervised vs. Autopilot) — nicknamed "auto-approve" / "YOLO" | The master switch for approval prompts — Supervised is the safer default for a team still learning what to trust |
 
 ### Discussion prompt
 *"What's one task on your team you'd trust an associate-level hire with completely unsupervised? What's one you wouldn't?"* — maps directly onto what should go in the permission rules as allow vs. deny.

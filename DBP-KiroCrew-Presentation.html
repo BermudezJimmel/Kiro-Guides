@@ -134,6 +134,7 @@
     <div class="logo"><img src="sagesoft-logo.svg" alt="Sagesoft Solutions"></div>
     <h2>Today's Agenda</h2>
     <p class="slide-sub">3 hours total — explain, then do, right after each module</p>
+    <div class="quote" style="font-size:0.9rem;">⚠️ <strong>Disclaimer:</strong> this is presented by DevOps / Cloud Engineers, not an AWS security audit. Verify anything security-critical with your own team before relying on it.</div>
     <table class="agenda-table" style="font-size:0.95rem;">
         <tr><th>Time</th><th>Module</th></tr>
         <tr><td>0:00 – 0:10</td><td>Welcome + open the Hands-On Guide (GitHub repo)</td></tr>
@@ -191,6 +192,7 @@
         <div class="card"><div class="icon">💬</div><h3>Slack / Discord / Teams</h3><p>Same crew, same memory, different window</p></div>
     </div>
     <div class="quote" style="font-size:0.95rem;">Note: "Dashboard" names this whole web app, not a button inside it. Closing this tab doesn't stop anything — the Gateway keeps running.</div>
+    <div class="quote" style="font-size:0.9rem;">Launched August 4, 2026 — open source, Apache 2.0.</div>
     <div class="analogy"><strong>Analogy:</strong> like one phone number. Call it, text it, video chat — the same person answers every time.</div>
     <p style="margin-top:12px; font-size:1rem;">Explore: <a href="https://kiro.dev/crew/" target="_blank">kiro.dev/crew</a> · <a href="https://github.com/kirodotdev/KiroCrew" target="_blank">github.com/kirodotdev/KiroCrew</a></p>
 </div>
@@ -249,7 +251,7 @@
     <div class="accent-corner"></div>
     <div class="logo"><img src="sagesoft-logo.svg" alt="Sagesoft Solutions"></div>
     <h2>Agent Creation: The Parts</h2>
-    <p class="slide-sub">Config, not a new brain — made in Customize → Mates → New Mate</p>
+    <p class="slide-sub">Config, not a new brain — turn on Settings → Developer → Feature Previews → Mates, then Mates page → New Mate</p>
     <ul class="big-list">
         <li><strong>Name</strong> — how you and Crew both refer to it</li>
         <li><strong>Workspace</strong> — the folder it is allowed to read and write</li>
@@ -337,6 +339,51 @@
     <div class="quote" style="font-size:0.95rem;">🛠 Hands-On: <a href="https://github.com/BermudezJimmel/Kiro-Guides/blob/content/Participants/Handson-7-Apps.md" target="_blank">Module 7 guide</a>.</div>
 </div>
 
+<!-- SLIDE 8M: SANDBOXING -->
+<div class="slide">
+    <div class="accent-corner"></div>
+    <div class="logo"><img src="sagesoft-logo.svg" alt="Sagesoft Solutions"></div>
+    <h2>Sandboxing</h2>
+    <p class="slide-sub">The fence around the agent, not just a setting</p>
+    <ul class="big-list">
+        <li>A real OS-level fence — a Linux namespace, or <code>sandbox-exec</code> on macOS</li>
+        <li>3 modes: <strong>auto</strong> (default), <strong>strict</strong> (also hides <code>~/.aws</code>, <code>~/.ssh</code>, <code>~/.kube</code>), <strong>off</strong></li>
+        <li>This runs under the agent, whether or not it ever misbehaves — it's not a trust decision, it's a floor</li>
+    </ul>
+    <div class="analogy"><strong>Analogy:</strong> like a hotel room key. It opens your room, never the whole building, even if you're a model guest.</div>
+    <div class="quote" style="font-size:0.95rem;">🛠 Try it: ask in chat, "What sandbox mode am I running in, and what does it hide from you?"</div>
+</div>
+
+<!-- SLIDE 8N: ARTIFACTS -->
+<div class="slide">
+    <div class="accent-corner"></div>
+    <div class="logo"><img src="sagesoft-logo.svg" alt="Sagesoft Solutions"></div>
+    <h2>Artifacts</h2>
+    <p class="slide-sub">Keep what the agent makes, instead of losing it to scrollback</p>
+    <ul class="big-list">
+        <li>Anything the agent renders — a doc, a widget, a page — can be saved with a stable handle</li>
+        <li>Every edit is a new version, like a commit — you can read or restore any older one</li>
+        <li>Ask the agent to iterate on a saved artifact by name, later, in a different conversation</li>
+    </ul>
+    <div class="analogy"><strong>Analogy:</strong> like saving a doc instead of leaving it in a chat you'll never scroll back to.</div>
+    <div class="quote" style="font-size:0.95rem;">🛠 Try it: ask it to make something, then say "save that as an artifact." Open the Artifacts tab to see it.</div>
+</div>
+
+<!-- SLIDE 8O: TERMINAL -->
+<div class="slide">
+    <div class="accent-corner"></div>
+    <div class="logo"><img src="sagesoft-logo.svg" alt="Sagesoft Solutions"></div>
+    <h2>Terminal</h2>
+    <p class="slide-sub">A real shell, right in the dashboard — not a simulation</p>
+    <ul class="big-list">
+        <li>Open a Terminal tab in the chat side panel — it's a real PTY, same as your own terminal app</li>
+        <li>Owner-only: no one else sharing this gateway can open it</li>
+        <li>Open it in two windows and the newest one takes over — the other gets a "take it back" button, not a crash</li>
+    </ul>
+    <div class="analogy"><strong>Analogy:</strong> not a chat pretending to be a terminal — it's the same terminal you'd open yourself.</div>
+    <div class="quote" style="font-size:0.95rem;">🛠 Try it: open a Terminal tab, run <code>kirocrew doctor</code> directly in it.</div>
+</div>
+
 <!-- SLIDE 8C: REAL USE CASES -->
 <div class="slide">
     <div class="accent-corner"></div>
@@ -397,7 +444,7 @@
         <tr><th>Product</th><th>Security model</th><th>Where you edit it</th></tr>
         <tr><td>Kiro IDE</td><td>Autopilot or Supervised mode; approvals can be saved as rules</td><td>IDE Settings → Permissions / Autopilot</td></tr>
         <tr><td>Kiro CLI</td><td>Per-capability rules in <code>permissions.yaml</code>; <code>--trust-all-tools</code> for one session</td><td>Edit <code>permissions.yaml</code>, or pass CLI flags</td></tr>
-        <tr><td>Kiro Crew</td><td>Defense in depth — sandbox, denied-command gate, audit log (see Module 2)</td><td>Dashboard → Settings → Security</td></tr>
+        <tr><td>Kiro Crew</td><td>Approval mode (Supervised vs Autopilot, nicknamed "auto-approve"/"YOLO") + defense in depth — sandbox, denied-command gate, audit log (see Module 2)</td><td>Dashboard → Settings → Security</td></tr>
     </table>
     <div class="analogy"><strong>Analogy:</strong> same rule — ask before acting — three different control panels. IDE and CLI are your own switches; Crew's panel is shared by everyone it serves.</div>
     <div class="quote" style="font-size:0.95rem;">⚠️ Browser and Computer Use control need DBP security sign-off before any demo.</div>
@@ -470,7 +517,7 @@
     </div>
 </div>
 
-<div class="slide-counter"><span id="currentSlide">1</span> / <span id="totalSlides">9</span></div>
+<div class="slide-counter"><span id="currentSlide">1</span> / <span id="totalSlides">21</span></div>
 <div class="nav-controls">
     <button class="nav-btn" onclick="toggleFullscreen()" id="fsBtn" title="Toggle Fullscreen">⛶</button>
     <button class="nav-btn" onclick="toggleDark()" id="darkBtn" title="Toggle Dark Mode">🌙</button>

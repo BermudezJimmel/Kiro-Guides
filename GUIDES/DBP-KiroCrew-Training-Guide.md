@@ -2,7 +2,7 @@
 **Client:** DBP
 **Delivered by:** Sagesoft Solutions Inc.
 **Audience:** Developers (20 participants)
-**Format:** 2 hours total — 15-20 min discussion, then hands-on for the remainder
+**Format:** ~3 hours total (incl. breaks) — 15-20 min discussion, then hands-on for the remainder
 **Tool in focus:** Kiro Crew (the always-on agent orchestration layer). The deck also compares it with Kiro IDE and CLI — platforms, specs, security, and credit usage.
 
 ---
@@ -37,7 +37,7 @@ Vague onboarding → vague results. The more specific the job description, the b
 
 ---
 
-## 3. Session Flow (120 minutes)
+## 3. Session Flow (~180 minutes)
 
 | Time | Duration | Segment |
 |---|---|---|

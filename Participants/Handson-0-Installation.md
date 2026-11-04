@@ -28,16 +28,23 @@ Open **Kiro Crew** from your Start Menu / Applications, like any other app.
 
 First launch shows a **Set up Kiro** page. Follow it — it signs you in and finishes setup for you. No terminal needed.
 
+**No Kiro account yet?** On that same page, choose **Sign up**. Pick **Google**, **GitHub**, or **AWS Builder ID** — no AWS account or credit card needed. Google is usually the fastest for a first-time sign-up.
+
+**New to Kiro entirely?** Watch this first: [Kiroween 2026 — Kiro Crew, CLI, Web, and IDE in one video](https://www.youtube.com/watch?v=PO3M2TKCUb0) (about 6 minutes).
+
 ## Step 4: Check it worked
 
 Look at the dashboard. If you see your name and a chat box ready to type in, you're ready for Module 1. Nothing else to check.
 
 ---
 
-**Prefer the terminal?** One line does everything above at once:
+**Prefer the terminal?** These lines do everything above at once:
 ```
 curl -fsSL https://download.crew.kiro.dev/cli.sh | sh
+kiro-cli login     # sign in the backend FIRST — the gateway checks for this on startup
 kirocrew setup
 ```
+
+> **Note:** the GUI "Set up Kiro" page (Step 3 above) handles this sign-in for you. The `kiro-cli login` line only matters for the terminal path — run it before `kirocrew setup` or setup stalls with no backend signed in.
 
 Next: [Module 1 — Account & Token Management](Handson-1-Account-Token.md)

@@ -16,9 +16,17 @@ The more specific the job description, the better the agent performs.
 
 ---
 
+## Step 0: Turn on the Mates preview (do this first)
+
+Mates is a **feature preview, off by default**. Turn it on once before you can create one:
+
+Open **Settings → Developer → Feature Previews → Mates** and switch it on. The **Mates** entry now appears in the left sidebar.
+
+🧭 **Don't see "Developer" or "Feature Previews"?** Your build may already have Mates on — check the left sidebar for a **Mates** entry. If it's there, skip to Step 1.
+
 ## Step 1: Create a new crew member
 
-Open **Customize → Mates** → **New mate**.
+Open the **Mates** page from the left sidebar, then click **New mate**.
 
 | Field | What to put |
 |---|---|
@@ -53,15 +61,15 @@ Watch for an approval prompt, or a refusal. **This is the moment that proves the
 
 ✅ **You'll see one of two things:** a card asking "Allow this?" with Approve/Deny buttons, or a plain written refusal. Both are a pass — either way, it didn't just do it silently.
 
-🧭 **It just did the task, no prompt at all?** Check Step 4 below — YOLO (auto-approve) may already be on from an earlier session.
+🧭 **It just did the task, no prompt at all?** Check Step 4 below — Approval mode may already be on Autopilot from an earlier session.
 
 ## Step 4: See the master switch
 
-Open **Settings → Security → YOLO (auto-approve)**.
+Open **Settings → Security → Approval mode** (sometimes nicknamed "auto-approve" or "YOLO").
 
-✅ **What you're looking for:** a toggle switch next to "YOLO (auto-approve)." Grey/left = off (default, safer). Colored/right = on.
+✅ **What you're looking for:** a control with two settings — **Supervised** (default, safer: asks before most actions) and **Autopilot** (skips asking for a set amount of time).
 
-By default, Crew asks before most actions — what you just saw in Step 3. Turning YOLO on lets it skip asking for a set amount of time. Leave it off while your team is still learning what to trust an agent with.
+By default, Crew is in **Supervised** mode — what you just saw in Step 3. Switching to **Autopilot** lets it skip asking for a while. Leave it on **Supervised** while your team is still learning what to trust an agent with.
 
 ---
 
@@ -73,17 +81,6 @@ By default, Crew asks before most actions — what you just saw in Step 3. Turni
 - "Why did you ask for approval just now instead of just doing it?"
 
 ---
-
-## Quick Reference — All 3 Modules
-
-| Task | Where |
-|---|---|
-| Check who's signed in | Settings → Overview |
-| See your plan / usage | Ask in chat: "what plan am I on?" |
-| Add a scheduled job | Ask in chat, or Schedule page → New Schedule |
-| Run a job now | Schedule page → open the job → Run Now |
-| Create a crew member | Customize → Mates → New Mate |
-| Control how much an agent can do without asking | Settings → Security → YOLO (auto-approve) |
 
 Done with Module 3? → [Module 4 — Connect Your Own Tools](Handson-4-MCP-Connections.md)
 
